@@ -1,0 +1,8 @@
+Package: utheme
+Version: 0.1
+Date: 2023-03-17
+Title: U Theme
+Description: provides Umweltbundesamt color palette and a ggplot theme addition
+Author: Ivo Offenthaler <ivo.offenthaler@umweltbundesamt.at>
+Maintainer: Ivo Offenthaler <ivo.offenthaler@umweltbundesamt.at>
+RoxygenNote: 7.2.2
