@@ -13,6 +13,6 @@ list of hex colors
 returns list of CI/CD color values
 }
 \examples{
-u_colors()
+get_u_colors()
 
 }
