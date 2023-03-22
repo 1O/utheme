@@ -1,0 +1,34 @@
+u_colors  <- list(
+    turq = '#4a8588', 
+    lightturq = '#81b8bb',
+    fir = '#4ea288', 
+    yellowgreen = '#bdd31d',
+    yellow = '#ffe85f', 
+    red = '#c22424',
+    lightblue = '#4497bc', 
+    darkblue = '#255165',
+    darkturq = '#008080'
+)
+
+
+## Bsp.
+plot(1, col = u_colors$turq)
+
+## zur Verwendung mit ggplot:
+theme_u <- function(){theme_minimal() %+replace%
+                          theme(text = element_text(family = "Open Sans", size = unit(10, 'pt')),
+                                strip.text = element_text(hjust = 0),
+                                panel.grid.minor = element_blank(),
+                                panel.grid.major = element_line(linewidth = unit(.25, 'pt')),
+                                legend.title = element_blank())
+}
+
+
+## Bsp.:
+## library(ggplot2)
+## iris |>
+##     ggplot() +
+##     geom_point(aes(Sepal.Length, Sepal.Width)) +
+##     theme_u()
+
+
