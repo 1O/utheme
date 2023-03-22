@@ -3,7 +3,7 @@
 #' @return list of hex colors
 #'
 #' @examples
-#' u_colors()
+#' get_u_colors()
 #'
 #' @export
 get_u_colors  <- function(){
@@ -17,10 +17,10 @@ get_u_colors  <- function(){
 
 
 
-theme_u <- function(){theme_minimal() %+replace%
-                      theme(text = element_text(family = "Open Sans", size = 10 * pt_to_bigpoint),
-                            strip.text = element_text(hjust = 0),
-                            panel.grid.minor = element_blank(),
-                            panel.grid.major = element_line(linewidth = .25 * pt_to_bigpoint),
-                            legend.title = element_blank())
+theme_u <- function(){ggplot2::theme_minimal() %+replace%
+                      ggplot2::theme(text = ggplot2::element_text(family = "Open Sans", size = 10 * pt_to_bigpoint),
+                            strip.text = ggplot2::element_text(hjust = 0),
+                            panel.grid.minor = ggplot2::element_blank(),
+                            panel.grid.major = ggplot2::element_line(linewidth = .25 * pt_to_bigpoint),
+                            legend.title = ggplot2::element_blank())
                      }
